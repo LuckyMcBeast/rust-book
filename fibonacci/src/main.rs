@@ -1,7 +1,13 @@
 const GOLDEN_RATIO: f64 = 1.618034;
 
 fn main() {
-    println!("{}", get_fibonacci(6));
+    let nth = 6;
+
+    println!(
+        "{} is the {} fibonacci number.",
+        get_fibonacci(nth),
+        (nth + 1)
+    )
 }
 
 fn get_fibonacci(nth: u32) -> u32 {
